@@ -1,12 +1,13 @@
 <template>
-    <v-card width="90%" height="300px">
+    <v-card class="common_card">
          <v-card-title>Promotions</v-card-title>
         <v-divider class="divider_class"/>
         <v-card-text>
-            <v-select :items="items" outlined placeholder="Special Offers">
+            <v-select append-icon="fas fa-caret-down" :items="items" outlined dense placeholder="Special Offers">
             </v-select>
-            <v-select :items="items" outlined placeholder="Special Offers">
+            <v-select append-icon="fas fa-caret-down" :items="items" outlined dense placeholder="Special Offers">
             </v-select>
+             <!-- <p>The Portal will be under maintenance for half hour between 3:00 PM to</p> -->
         </v-card-text>
     </v-card>
 </template>
@@ -23,6 +24,7 @@ export default {
 </script>
 
 <style lang="scss">
+@import "@/scss/variable.scss";
 .v-input__control{
     margin: 10px 15px 5px 15px;    
 }

@@ -1,8 +1,12 @@
 <template>
     <div class="user_main">
-        <div>
-            <v-card class="user_card" elevation="1" >
-                <v-card-title>Users </v-card-title> 
+        <div class="nav_div">        
+            <NavDrawer/>
+        </div>
+        <div class="parent">
+            <Appbar class="header_app"/>
+            <v-card>
+                <v-card-title><b>Users </b></v-card-title> 
                 <v-card-text>
                     Export To : 
                     <v-btn>Excel
@@ -10,7 +14,7 @@
                     </v-btn>
                     <v-btn class="export_btn" large color="success"> EXPORT
                     </v-btn>
-                    <v-btn class="export_btn" outlined color="success"> PUSH NOTIFICATION
+                    <v-btn class="export_btn" outlined color="success" @click="pushNotification()"> PUSH NOTIFICATION
                     </v-btn>
                     <v-btn text class="export_btn" color="success" @click="generateReport()"> GENERATE REPORT
                     </v-btn>
@@ -19,22 +23,29 @@
                         <v-text-field class="search_text"  solo append-icon="fas fa-search"></v-text-field>
                     </div>
                     <v-divider class="divider_class"/>
+                    </v-card-text>
+                    </v-card>
+                    <v-card class="common_card">
                     <v-card-text>
                         <div class="user_table">
-                            <v-data-table :headers="headers" :items="items">
+                            <v-data-table show-select single-select :headers="headers" :items="items">
                             </v-data-table>
                         </div> 
                     </v-card-text>
-                </v-card-text>   
-                             
-            </v-card>
+                    </v-card>
         </div>
        
     </div>
 </template>
 
 <script>
+import Appbar from '../app_bar.vue'
+import NavDrawer from '../nav_bar'
 export default {
+    components:{
+        Appbar,
+        NavDrawer,
+    },
     data()
     {
         return{
@@ -66,16 +77,15 @@ export default {
         generateReport()
         {
             this.$router.push("userreport")
+        },
+        pushNotification(){
+            this.$router.push("pushnotification")
         }
     }
 }
 </script>
 
 <style lang="scss">
-.user_card{
-    width: 100%;
-    height: 100%;
-}
 
 .export_btn{
     margin: 0 0 0 40px;

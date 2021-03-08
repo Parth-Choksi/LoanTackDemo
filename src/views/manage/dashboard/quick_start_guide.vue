@@ -1,11 +1,37 @@
 <template>
-    <v-card width="95%" height="300px">
+    <v-card class="common_card">
         <v-card-title>Quick Start Guide</v-card-title>
         <v-divider class="divider_class"/>
         <v-card-text>
-        <v-list-item-title class="inner_card_title">Calculation Set Default</v-list-item-title>
-        <v-card class="inner_card" width="20%" height="60%" outlined color="green">
-        </v-card>
+            <v-row>
+                <v-col cols="4">
+                <v-list-item-title class="inner_card_title">Calculation Set Default</v-list-item-title>
+                    <v-card-text>
+                        <iframe width="300" height="180" src="https://www.youtube.com/embed/3olM-9vcd4M" 
+                               frameborder="0" 
+                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </v-card-text>
+                </v-col>
+                <v-col cols="4">
+                    <v-list-item-title class="inner_card_title">Calculation Set Default</v-list-item-title>
+                    <v-card-text>
+                        <iframe width="300" height="180" src="https://www.youtube.com/embed/3olM-9vcd4M" 
+                               frameborder="0" 
+                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </v-card-text>
+                </v-col>
+                <v-col cols="4">
+                    <v-list-item-title class="inner_card_title">Calculation Set Default</v-list-item-title>
+                    <v-card-text>
+                        <iframe width="300" height="180" src="https://www.youtube.com/embed/3olM-9vcd4M" 
+                               frameborder="0" 
+                               allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen></iframe>
+                    </v-card-text>
+                </v-col>
+            </v-row>
         </v-card-text>
     </v-card>
 </template>

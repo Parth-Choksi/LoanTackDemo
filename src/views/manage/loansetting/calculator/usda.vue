@@ -1,9 +1,9 @@
 <template>
     <div class="fha_main">
         <div class="first_card">
-        <v-card class="fha_card">
+        <v-card class="max_card">
             <v-card-title>Default Values</v-card-title>
-            <v-divider></v-divider>
+            <v-divider class="divider_class"/>
             <v-card-text>
                     <div class="first_sec">
                     <v-row>
@@ -50,7 +50,7 @@
                     </v-row>
                     </div>
             </v-card-text>
-            <v-divider/>
+            <v-divider class="divider_class"/>
             <v-card-text>
                     <div class="first_sec">
                     <v-row>
@@ -93,9 +93,9 @@
         </div>
 
         <div class="second_card">
-        <v-card class="fha_card">
+        <v-card class="max_card">
             <v-card-title>Loan Factors</v-card-title>
-            <v-divider/>
+            <v-divider class="divider_class"/>
             <v-card-text>
                 <v-row style="background-color:lightgray">
                     <v-col cols="3"></v-col>
@@ -175,7 +175,7 @@
                 </v-row>
 
                 </v-card-text>
-                <v-divider/>
+                <v-divider class="divider_class"/>
                 <v-card-text>
                     <v-btn class="btn_class" outlined color="success">ADD FACTOR ROW</v-btn>
                     <v-btn class="btn_class" text color="green">RESTORE DEFAULT</v-btn>
@@ -186,7 +186,7 @@
                 <v-btn class="btn_class" color="success">SAVE</v-btn>
             </div>
             <div class="third_card">
-                <v-card class="calc_card">
+                <v-card class="max_card">
                     <v-card-title>Calculator Disclaimer</v-card-title>
                     <v-divider/>
                     <div class="p_div">
@@ -197,7 +197,7 @@
                            Minima necessitatibus officia aut, placeat vel exercitationem.
                         </p>
                     </div>
-                    <v-divider/>
+                    <v-divider class="divider_class"/>
                     <v-card-text>
                         <v-btn color="success">SAVE</v-btn>
                     </v-card-text>

@@ -8,7 +8,6 @@
             <div class="dash_div">
                 
                 <h1>Dashboard</h1>
-                <v-spacer/>
                 <v-divider class="divider_class"/>
                 <div class="row_disp_div">
                 <v-row>

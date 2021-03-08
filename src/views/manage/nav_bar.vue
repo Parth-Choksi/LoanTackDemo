@@ -43,6 +43,7 @@ export default {
                 {
                 action: 'fab fa-dashcube',
                 title: 'Dashboard',
+                link: '/dashboard/index'
                 },
                 {
                 action: 'fab fa-accusoft',
@@ -85,11 +86,11 @@ export default {
                 {
                 action: 'fas fa-bullhorn',
                 items: [
-                    { title: 'Share App' },
-                    { title: 'QR Codes' },
-                    { title: 'Email Signature' },
-                    { title: 'Auto Responder' },
-                    { title: 'Widgets' },
+                    { title: 'Share App',link1:'/marketing/shareapp' },
+                    { title: 'QR Codes' ,link1:'/marketing/qrcode' },
+                    { title: 'Email Signature' ,link1:'/marketing/email'},
+                    { title: 'Auto Responder',link1:'/marketing/autoresponder' },
+                    { title: 'Widgets',link1:'/marketing/widgets' },
                     ],
                 title: 'Marketing',
                 },
@@ -104,8 +105,8 @@ export default {
                 {
                 action: 'fas fa-comment-alt',
                 items: [
-                    { title: 'Guide' },
-                    { title: 'FAQs' },
+                    { title: 'Guide',link1:'/support/guide' },
+                    { title: 'FAQs' ,link1:'/support/faqs'},
                     ],
                 title: 'Support',
                 },

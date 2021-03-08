@@ -3,6 +3,7 @@ import Vuerouter from 'vue-router'
 import Login from '../views/home/login.vue'
 import SignUp from '../views/home/signup.vue'
 import ForgotPassword from '../views/home/forgot_password.vue'
+import VerificationCode from '../views/home/verification.vue'
 import AppBar from '../views/manage/app_bar.vue'
 import dashboardIndex from '../views/manage/dashboard/index.vue'
 import ActivityUser from '../views/manage/activity/users.vue'
@@ -21,6 +22,27 @@ import AppsettigIndex from '../views/manage/appsetting/appsetting_index.vue'
 import LoanFha from '../views/manage/loansetting/calculator/fha.vue'
 import LoanIndex from '../views/manage/loansetting/calculator/loansetting_index.vue'
 import LoanMain from '../views/manage/loansetting/loan_main_index.vue'
+import LearningCenter from '../views/manage/content/learning_center.vue'
+import ShareApp from '../views/manage/marketing/shareapp.vue'
+import QrCode from '../views/manage/marketing/QRcodes.vue'
+import EmailSignature from '../views/manage/marketing/email_signature.vue'
+import UploadImage from '../views/manage/marketing/upload_image.vue'
+import AutoResponder from '../views/manage/marketing/auto_responder.vue'
+import CoBranding from '../views/manage/cobranding/co_branding.vue'
+import AddCoBranding from '../views/manage/cobranding/add_co_branding.vue'
+import BradedIndex from '../views/manage/brandedapp/branded_index.vue'
+import ApplyBranded from '../views/manage/brandedapp/apply_branded.vue'
+import Guide from '../views/manage/support/guide.vue'
+import FAQS from '../views/manage/support/FAQ.vue'
+import Subscription from '../views/manage/menufiles/subscription.vue'
+import Subscribe from '../views/manage/menufiles/subscribe.vue'
+import Account from '../views/manage/menufiles/myaccount.vue'
+import Billing from '../views/manage/menufiles/billing_history.vue'
+import Setting from '../views/manage/menufiles/setting.vue'
+import PushNotification from '../views/manage/activity/pushnotification.vue'
+import Widgets from '../views/manage/marketing/widgets.vue'
+import Quill from '../views/manage/support/quill.vue'
+
 Vue.use(Vuerouter);
 
 const routes = [
@@ -38,6 +60,11 @@ const routes = [
         path: '/forgot_password',
         name: 'forgot_password',
         component: ForgotPassword,
+    },
+    {
+        path: '/verification',
+        name: 'verification',
+        component: VerificationCode,
     },
     {
         path: '/app_bar',
@@ -58,6 +85,11 @@ const routes = [
         path: '/activity/users',
         name: 'activity_users',
         component: ActivityUser,
+    },
+    {
+        path: '/activity/pushnotification',
+        name: 'activity_notification',
+        component: PushNotification,
     },
     {
         path: '/activity/report',
@@ -128,6 +160,101 @@ const routes = [
         path: '/loansetting/loanmain',
         name: 'loan_main',
         component: LoanMain,
+    },
+    {
+        path: '/content/learning_center',
+        name: 'learning_center',
+        component: LearningCenter,
+    },
+    {
+        path: '/marketing/shareapp',
+        name: 'shareapp',
+        component: ShareApp,
+    },
+    {
+        path: '/marketing/qrcode',
+        name: 'qrcode',
+        component: QrCode,
+    },
+    {
+        path: '/marketing/email',
+        name: 'email_signature',
+        component: EmailSignature,
+    },
+    {
+        path: '/marketing/uploadimage',
+        name: 'upload_image',
+        component: UploadImage,
+    },
+    {
+        path: '/marketing/autoresponder',
+        name: 'auto_responder',
+        component: AutoResponder,
+    },
+    {
+        path: '/cobranding/co_branding',
+        name: 'co_branding',
+        component: CoBranding,
+    },
+    {
+        path: '/cobranding/add_co_branding',
+        name: 'add_co_branding',
+        component: AddCoBranding,
+    },
+    {
+        path: '/brandedapp/branded_index',
+        name: 'branded_index',
+        component: BradedIndex,
+    },
+    {
+        path: '/brandedapp/apply_branded',
+        name: 'branded_apply',
+        component: ApplyBranded,
+    },
+    {
+        path: '/support/guide',
+        name: 'guide',
+        component: Guide,
+    },
+    {
+        path: '/support/faqs',
+        name: 'faqs',
+        component: FAQS,
+    },
+    {
+        path: '/subscription',
+        name: 'subscription',
+        component: Subscription,
+    },
+    {
+        path: '/subscribe',
+        name: 'subscribe',
+        component: Subscribe,
+    },
+    {
+        path: '/account',
+        name: 'account',
+        component: Account,
+    },
+    {
+        path: '/billinghistory',
+        name: 'bill_history',
+        component: Billing,
+    },
+    {
+        path: '/setting',
+        name: 'setting',
+        component: Setting,
+    },
+    {
+        path: '/marketing/widgets',
+        name: 'widgets',
+        component: Widgets,
+    },
+    {
+        path: '/quill',
+        name: 'quill',
+        component: Quill,
     },
 
 ];

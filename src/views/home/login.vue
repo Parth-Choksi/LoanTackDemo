@@ -6,6 +6,13 @@
             </div>
             <!-- <h1>Hello</h1> -->    
             <div class="left_sec">
+                <div class="logo">
+                    <v-img
+                        height="104"
+                        width="210"
+                        src="src\\assets\\LoanTackk_Logo.png"
+                        ></v-img>
+                </div>
                 <v-form ref="loginform" v-model="form.login" lazy-validation>
                     <div class="form_heading_text">Login</div>
                     <v-row>

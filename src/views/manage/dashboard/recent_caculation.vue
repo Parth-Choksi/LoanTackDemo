@@ -1,43 +1,23 @@
-    <v-card width="90%" height="300px">
+<template>
+    <v-card class="common_card">
         <v-card-title>Recent Calculations</v-card-title>
-        <v-divider/>
+        <v-divider class="divider_class"/>
         <v-card-text>
-            {{this.chartData}}
+            <pie-chart :data="[['fha',603],['conventional',643],['jumbo',406],['usda',629],['va',46],['affordability',228]]"></pie-chart>
         </v-card-text>
-    </v-card>
+    </v-card>    
+</template>
 
 <script>
-import { Pie } from 'vue-chartjs'
 export default {
-    extends : Pie,
+
     data()
     {
         return{
-            chartData: {
-                labels: ["fha (Purchase)","Conventional (Purchase)","Jumbo","USDA","VA","Affordability"],
-                datasets: [
-                    {
-                        // backgroundColor:[
-                        //     color = 'orange',
-                        //     color = 'green',
-                        //     color = 'cyan',
-                        //     color = 'red',
-                        //     color = 'cream',
-                        //     color = 'blue',
-                        // ],
-                        data:[603,643,228,46,406,629],
-                    }
-                ]
-            },
-            options:{
-                responsive:true,
-            }
+
         }
     },
-    // mounted()
-    // {
-    //     this.renderChart(this.chartData,this.options)
-    // }
+
 }
 </script>
 

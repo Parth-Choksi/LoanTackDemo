@@ -5,7 +5,8 @@
                 <v-spacer/>
                 <span @click="returnCalculation()" class="cursor_x">X</span>
             </v-card-title>
-            <v-divider/>
+            <v-divider class="divider_class"/>
+            <v-card-text>
             <v-form>
                 <v-card-text>
                     <v-row>
@@ -25,7 +26,7 @@
                     <i class="fas fa-caret-down" @click="activated = true"></i>
                     <v-row>
                         <v-col cols="6">
-                            <v-list v-model="activated">
+                            <v-list>
                                 <v-list-item>Loan Type</v-list-item>
                                 <v-list-item>Calculate Type</v-list-item>
                                 <v-list-item>Property Value</v-list-item>
@@ -36,6 +37,7 @@
                             </v-list>
                         </v-col>
                         <v-col cols="6">
+                            <v-list>
                                 <v-list-item>Term</v-list-item>
                                 <v-list-item>FICO</v-list-item>
                                 <v-list-item>Principal & Interest</v-list-item>
@@ -43,6 +45,7 @@
                                 <v-list-item>Annual Hazard Insurance</v-list-item>
                                 <v-list-item>Annual Tax Rate</v-list-item>
                                 <v-list-item>Mortage Insurance</v-list-item>
+                            </v-list>
                         </v-col>
                     </v-row>
                     <v-divider/>
@@ -50,6 +53,7 @@
                 </v-card-text>
 
             </v-form>
+            </v-card-text>
         </v-card>
     </v-dialog>
 </template>

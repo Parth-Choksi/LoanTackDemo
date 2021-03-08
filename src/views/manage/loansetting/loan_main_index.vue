@@ -6,9 +6,6 @@
         <div class="parent">
             <Appbar class="header_app"/>
             <div class="dash_div">
-                <v-spacer/>
-                <h1>Fee</h1>
-                <v-divider/>
                <Fee/>
                <!-- <ProfileColor/>
                <ProfileMenu/> -->

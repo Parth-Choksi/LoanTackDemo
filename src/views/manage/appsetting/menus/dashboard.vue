@@ -3,9 +3,9 @@
         <div class="dashboard_inner_div">
             <v-row>
                 <v-col cols="7">
-                    <v-card>
+                    <v-card class="menu_card">
                         <v-card-text>Dashboard Links</v-card-text>
-                        <v-divider/>
+                        <v-divider class="divider_class"/>
                         <div class="gray">
                             <div class="one">
                                 <span> <br></span>
@@ -101,9 +101,9 @@
                     </v-card>
                 </v-col>
                 <v-col cols="5">
-                    <v-card>
+                    <v-card class="menu_card">
                         <v-card-text>Live App Dashboard Menu</v-card-text>
-                        <v-divider/>
+                        <v-divider class="divider_class"/>
                         <v-list-item>
                             <div class="dash_menu_sec">
                             <p class="title">Calculator</p>
@@ -140,7 +140,7 @@
                             </span>
                             </div>
                         </v-list-item>
-                        <v-divider/>
+                        <v-divider class="divider_class"/>
                         <v-card-text>
                             <v-btn color="success">SAVE</v-btn>
                         </v-card-text>
@@ -149,9 +149,10 @@
             </v-row>
             <v-row>
                 <v-col cols="12">
-                    <v-card>
+                    <v-card class="menu_card">
                         <v-card-title>Custom Links</v-card-title>
-                        <v-divider/>
+                        <v-divider class="divider_class"/>
+                        <v-card-text>
                         <div class="custom_link_sec">
                             <label>URL</label>
                             <v-text-field placeholder="https://" outlined></v-text-field>
@@ -176,7 +177,8 @@
                                 <i class="fas fa-video"></i>
                             </v-card-text>
                         </div>
-                        <v-divider/>
+                        </v-card-text>
+                        <v-divider class="divider_class"/>
                         <v-card-text>
                             <v-btn class="btn_class" outlined color="success">ADD</v-btn>
                         </v-card-text>
@@ -206,6 +208,9 @@ i{
 
 .custom_link_sec{
     width: 100%;
+    i{
+        color: black;
+    }
 }
 
 .dash_menu_sec

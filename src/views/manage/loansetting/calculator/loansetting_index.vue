@@ -1,12 +1,20 @@
 <template>
      <div class="loan_main">
+         <div class="nav_div">        
+            <NavDrawer/>
+        </div>
+        <div class="parent">
+            <Appbar class="header_app"/>
          <div class="loan_header">
+             <div>
              <h1>Calculators</h1>
              <div class="switch_div">
                 
                  <label>{{tabs.title}}</label>
                 <v-switch inset color="success"></v-switch>
              </div>
+             </div>
+             <div class="tabs_sec">
              <v-row>
                  <v-col cols="12">
                      <v-tabs v-model="tabs.tab">
@@ -19,6 +27,8 @@
                      </v-tabs>
                  </v-col>
              </v-row>
+             </div>
+            <v-divider class="divider_class"/>
          </div>
          <div class="loan_middle">
              <v-tabs-items v-model="tabs.tab">
@@ -30,10 +40,13 @@
                  <v-tab-item><Affordability/></v-tab-item>
              </v-tabs-items>
          </div>
+        </div>
     </div>
 </template>
 
 <script>
+import Appbar from '/LoanTack1/loantack-project/src/views/manage/app_bar.vue'
+import NavDrawer from '/LoanTack1/loantack-project/src/views/manage/nav_bar.vue'
 import FHA from '../calculator/fha'
 import Conventional from '../calculator/conventional.vue'
 import Jumbo from '../calculator/jumbo.vue'
@@ -43,6 +56,8 @@ import Affordability from '../calculator/affordability.vue'
 export default {
     components:
     {
+        Appbar,
+        NavDrawer,
         FHA,
         Conventional,
         Jumbo,
@@ -65,7 +80,19 @@ export default {
 </script>
 
 <style lang="scss">
+.tabs_sec{
+    float: left;
+    width: 100%;
+}
 .switch_div{
-    display: inline-block;
+    float: right;
+}
+h1{
+    width: auto;
+    float: left;
+}
+.loan_middle{
+    float: left;
+    width: 100%;
 }
 </style>

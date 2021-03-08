@@ -3,9 +3,10 @@
         <div class="dashboard_inner_div">
             <v-row>
                 <v-col cols="5">
-                    <v-card>
-                        <v-card-text>Guide</v-card-text>
-                        <v-divider/>
+                    <v-card class="menu_card">
+                        <v-card-title>Guide</v-card-title>
+                        <v-divider class="divider_class"/>
+                        <v-card-text>
                         <v-list-item>
                             <div class="dash_menu_sec">
                             <p class="title">Learning Center</p>
@@ -38,6 +39,7 @@
                             </span>
                             </div>
                         </v-list-item>
+                        </v-card-text>
                     </v-card>
                 </v-col>
             </v-row>

@@ -1,9 +1,13 @@
 <template>
   <div class="calculation_main">
-      <div>
-          <v-card class="user_card">
-              <v-card-title>Calculations </v-card-title> 
-                <v-card-text>
+      <div class="nav_div">        
+            <NavDrawer/>
+        </div>
+        <div class="parent">
+            <Appbar class="header_app"/>
+          <v-card>
+              <v-card-title><b>Calculations</b> </v-card-title> 
+                    <v-card-text>
                     Export To : 
                     <v-btn>Excel
                         <i class="fas fa-caret-down"></i>
@@ -18,13 +22,15 @@
                         </v-text-field>
                     </div>
                     <v-divider class="divider_class"/>
+                    </v-card-text>
+                </v-card>
+                <v-card >
                     <v-card-text>
                         <div class="user_table">
                             <v-data-table show-select class="elevation-1" :headers="headers" :items="items">
                             </v-data-table>
                         </div>
                     </v-card-text>
-                </v-card-text>
           </v-card>
       </div>
       
@@ -32,7 +38,13 @@
 </template>
 
 <script>
+import Appbar from '../app_bar.vue'
+import NavDrawer from '../nav_bar'
 export default {
+    components:{
+        Appbar,
+        NavDrawer,
+    },
      data()
     {
         return{

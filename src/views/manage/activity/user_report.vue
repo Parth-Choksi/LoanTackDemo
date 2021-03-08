@@ -1,11 +1,11 @@
 <template>
     <v-dialog v-model="dialog" width="1200px">
         <v-card>
-            <v-card-title>GENERATE REPORT
-                <v-spacer/>
+            <v-card-title>
+                <h4>GENERATE REPORT</h4>
                 <span @click="returnUser()" class="cursor_x">X</span>
             </v-card-title>
-            <v-divider/>
+            <v-divider class="divider_class"/>
             <v-form>
                 <v-card-text>
                     <v-row>
@@ -118,8 +118,12 @@ export default {
 <style lang="scss">
 .cursor_x{
     cursor: pointer;
+    float: right;
 }
 .gnrt_btn{
     margin: 12px 0 0 30px;
+}
+.v-overlay__scrim{
+    background-color: white !important;
 }
 </style>

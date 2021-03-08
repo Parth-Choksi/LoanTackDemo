@@ -1,6 +1,10 @@
 <template>
     <div class="document_main">
-        <div>
+        <div class="nav_div">        
+            <NavDrawer/>
+        </div>
+        <div class="parent">
+            <Appbar class="header_app"/>
             <v-card class="user_card" elevation="1" >
                 <v-card-title>Documents </v-card-title> 
                 <v-card-text>
@@ -31,7 +35,13 @@
 </template>
 
 <script>
+import Appbar from '../app_bar.vue'
+import NavDrawer from '../nav_bar'
 export default {
+    components:{
+        Appbar,
+        NavDrawer,
+    },
      data()
     {
         return{

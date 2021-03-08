@@ -18,6 +18,7 @@ $sec_width : 50%;
 $sec_right : 0%;
 $sec_height : 100%;
 
+
 // Image For form
 
 $img_width : 100%;
@@ -25,3 +26,18 @@ $img_height : 100%;
 $img_repeat : no-repeat;
 $img_size : cover;
 $img_position : right center;
+
+// Common css for small Card
+
+.common_card{
+    float: left;
+    width: 90%;
+    margin: 20px 20px 20px 20px;
+}
+
+// css for max card
+.max_card{
+    float: left;
+    width: 100%;
+    margin: 20px 20px 20px 20px;
+}

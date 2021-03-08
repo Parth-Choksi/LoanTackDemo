@@ -1,9 +1,9 @@
 <template>
     <div class="fha_main">
         <div class="first_card">
-        <v-card class="fha_card">
+        <v-card class="max_card">
             <v-card-title>Default Values</v-card-title>
-            <v-divider></v-divider>
+            <v-divider class="divider_class"/>
             <v-card-text>
                     <div class="first_sec">
                     <v-row>
@@ -51,7 +51,7 @@
                     </v-row>
                     </div>
             </v-card-text>
-            <v-divider/>
+            <v-divider class="divider_class"/>
             <v-card-text>
                     <div class="first_sec">
                     <v-row>
@@ -94,9 +94,9 @@
         </div>
 
         <div class="second_card">
-        <v-card class="fha_card">
+        <v-card class="max_card">
             <v-card-title>VA Funding Fee | Regular Military</v-card-title>
-            <v-divider/>
+            <v-divider class="divider_class"/>
             <v-card-text class="text_card_sec">
                 <div class="second_sec">
                 <v-row>
@@ -134,9 +134,9 @@
             </v-card>
         </div>
         <div class="second_card">
-            <v-card class="fha_card">
+            <v-card class="max_card">
             <v-card-title>VA Funding Fee | Reserves/National Guard </v-card-title>
-            <v-divider/>
+            <v-divider class="divider_class"/>
             <v-card-text class="text_card_sec">
                 <div class="second_sec">
                 <v-row>
@@ -171,7 +171,7 @@
                 </v-row>
                 </div>
                 </v-card-text>
-                <v-divider/>
+                <v-divider class="divider_class"/>
                 <v-card-text>
                     <v-btn text color="success">RESTORE DEFAULTS</v-btn>
                 </v-card-text>
@@ -182,9 +182,9 @@
                 <v-btn class="btn_class" color="success">SAVE</v-btn>
             </div>
             <div class="third_card">
-                <v-card class="calc_card">
+                <v-card class="max_card">
                     <v-card-title>Calculator Disclaimer</v-card-title>
-                    <v-divider/>
+                    <v-divider class="divider_class"/>
                     <div class="p_div">
                         <p class="ptext_div">
                            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
@@ -193,7 +193,7 @@
                            Minima necessitatibus officia aut, placeat vel exercitationem.
                         </p>
                     </div>
-                    <v-divider/>
+                    <v-divider class="divider_class"/>
                     <v-card-text>
                         <v-btn color="success">SAVE</v-btn>
                     </v-card-text>

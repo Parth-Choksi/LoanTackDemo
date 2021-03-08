@@ -1,5 +1,5 @@
 <template>
-    <v-card width="90%" height="350px">
+    <v-card class="common_card">
         <v-card-title>Recent Activities</v-card-title>
         <v-divider class="divider_class"/>
         <v-card-text>

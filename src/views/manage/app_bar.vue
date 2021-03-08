@@ -2,6 +2,7 @@
     <v-app-bar app :elevation="1" color="white">
         <v-spacer></v-spacer>
             <i class="far fa-bell noti-icon"></i>
+            <v-divider vertical class="divider_class"/>
         <div>
             <v-list-item>
                 <v-list-item-avatar>
@@ -31,6 +32,7 @@ export default {
 <style lang="scss">
     .noti-icon {
         font-size: 20px;
+        margin-right: 10px;
     }
     
 </style>
